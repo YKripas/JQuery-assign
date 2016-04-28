@@ -7,7 +7,8 @@
         <link href="mobile.css" rel="stylesheet" media="only screen and(max-width:779px)"/>
         <link href="print.css" rel="stylesheet" media="print"/>
         <link href="slider.css" rel="stylesheet"/>
-            
+          <script src="external/jquery/jquery.js" type="text/javascript"></script>
+            <script src="jquery.cycle.all.js" type="text/javascript"></script>  
 
         
         <title>
@@ -47,9 +48,99 @@
                         <p>Rocky Bear Dojo has been providing the highest quality instruction in Shinkyokushin Karate for kids and adults in the Denver Metro area for over 30 years.   </p>
 
                         <p class="center">
-                        <img src="keretes3.jpg"  alt="Shinkyokushin Karate" width="500" height="180" > <!--width="500" height="180"-->
-                            </p> 
+                            
+                            <div class="sl-slider"> 
+                            <div class="sl-slides">
+                                
+                                <!--1ST IMAGE USED FOR SLIDER-->
+                              <div class="sl-item"> 
+                               <div class="sl-image">
+                                  <a href="products.html" title="Shinkyokushin Products">
+                                  <img src="design_shinkyokushin_hiza.jpg" /></a> </div>
 
+                               <div class="sl-content"> 
+                                 <h3><a href="products.html" title="Shinkyokushin Products">Shinkyokushin Products</a></h3>
+                                 <p><a class="sl-more" href=""> More </a></p>
+                               </div>
+                              </div> 
+                                <!--END OF 1ST IMAGE DECLARATION-->
+                                
+                                  <!--2ND IMAGE USED FOR SLIDER-->
+                                <div class="sl-item"> 
+                               <div class="sl-image">
+                                  <a href="about.html" title="">
+                                  <img src="fke_mawashiwko.jpg" /></a> </div>
+
+                               <div class="sl-content"> 
+                                 <h3><a href="about.html" title="About Us">About Us</a></h3>
+                                 <p><a class="sl-more" href=""> More </a></p>
+                               </div>
+                              </div> 
+                                <!--END OF 2ND IMAGE DECLARATION-->
+                                
+                                  <!--3RD IMAGE USED FOR SLIDER-->
+                                 <div class="sl-item"> 
+                               <div class="sl-image">
+                                  <a href="contact.html" title="Contact Us">
+                                  <img src="shinkyokushin_by_blackcat333.jpg" /></a> </div>
+
+                               <div class="sl-content"> 
+                                 <h3><a href="contact.html" title="Contact Us">Contact Us</a></h3>
+                                 <p><a class="sl-more" href=""> More </a></p>
+                               </div>
+                              </div> 
+                                <!--END OF 3RD IMAGE DECLARATION-->
+                                
+                                  <!--4TH IMAGE USED FOR SLIDER-->
+                                <div class="sl-item"> 
+                               <div class="sl-image">
+                                  <a href="Locations.html" title="Locations">
+                                  <img src="shinkyokushin%20spirit%202.jpg" /></a> </div>
+
+                               <div class="sl-content"> 
+                                 <h3><a href="Locations.html" title="Locations">Locations</a></h3>
+                                 <p><a class="sl-more" href=""> More </a></p>
+                               </div>
+                              </div> 
+                                <!--END OF 4TH IMAGE DECLARATION-->
+
+                             </div> <!-- end sl-slides -->
+
+                             <div class="sl-prev-next-wrap">
+                              <div class="sl-prev-next">
+                               <a href="#sl-prev" class="sl-prev"><img src="prev.png" alt="previous" border="0" /></a>
+                               <a href="#sl-next" class="sl-next"><img src="next.png" alt="next" border="0" /></a>
+                              </div>
+                             </div>
+
+                             <div class="sl-nav">
+                              <span class="sl-pager">&nbsp;</span>
+                             </div> 
+                            </div> <!-- end sl-slider -->
+                        <!--<img src="keretes3.jpg"  alt="Shinkyokushin Karate" width="500" height="180" > <!--width="500" height="180"-->
+                            </p> 
+                        <!--RUN THE SLIDER-->
+                        <script type="text/javascript">
+                        /* <![CDATA[ */
+                        $(function() {
+                            $('.sl-slides').cycle({
+                                fx: 'scrollHorz',
+                                timeout: 3000,
+                                delay: 0,
+                                speed: 800,
+                                next: '.sl-next',
+                                prev: '.sl-prev',
+                                pager: '.sl-pager',
+                                continuous: 0,
+                                sync: 1,
+                                pause: 1,
+                                pauseOnPagerHover: 1,
+                                cleartype: true,
+                                cleartypeNoBg: true
+                            });
+                         });
+                        /* ]]> */
+                        </script>
                     </section>
             
             <footer>
@@ -57,8 +148,7 @@
             </footer>
             
             </div><!--end layout-->
-            <script src="external/jquery/jquery.js" type="text/javascript"></script>
-            <script src="jquery.cycle.all.js" type="text/javascript"></script>
+           
         </body>
 
 
