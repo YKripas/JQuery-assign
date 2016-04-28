@@ -6,9 +6,28 @@
         <link href="style2.css" rel="stylesheet" media="screen and (min-width:780px)"/>
         <link href="mobile.css" rel="stylesheet" media="only screen and(max-width:779px)"/>
         <link href="print.css" rel="stylesheet" media="print"/>
-        <link href="jquery-ui.css" rel="stylesheet"/>
+        <!--<link href="jquery-ui.css" rel="stylesheet"/>-->
+        <link href="custom/jquery-ui.css" rel="stylesheet"/>  <!--NEW THEME-->
         <script src="external/jquery/jquery.js" type="text/javascript"></script>
-        <script src="jquery-ui.min.js" type="text/javascript"></script>
+        <script src="custom/jquery-ui.min.js" type="text/javascript"></script>  <!--NEW THEME-->
+        <!--<script src="jquery-ui.min.js" type="text/javascript"></script>-->
+         <script type="text/javascript">
+                        $(document).ready(function(){
+                                $("#accordion").accordion({
+                                   // collapsible:true
+                                    //active: false
+                                    width:800            
+                                });
+                            $("#accordion").accordion({
+                               collapsible:true 
+                            });
+                             $("#accordion").accordion({
+                               active:false 
+                            });                           
+
+                            });
+                    
+                        </script>
 
         
         <title>
@@ -39,7 +58,17 @@
                         </ul>
                     </nav><!--end of Navigational Menu-->
                     <section id="content">
-                       
+                      <!-- <script type="text/javascript">
+                        $(document).ready(function(){
+                            $(function(){
+                                $(accordion).accordion({
+                                   collapsible:
+                                    active:
+                                    width:
+                                });
+                            }
+                        });
+                        </script>-->
 
                         <h2>About Us</h2>
                         <p> We provide professional instruction in the art of Shinkyokushin karate and promote the history, philosophy, and techniques of the founder of this full contact Karate style - Masutatsu Oyama. We also offer excellent children's karate programs tailored for kids as young as 3 years old as well as regular classes for older kids, teens, adults and families.</p>
@@ -47,28 +76,44 @@
                      <h3><span>Instructors</span></h3>
                         <ul>
                         <div id="accordion">
-                            <div id="John Krowsky, President">
-                                <h1>Section 1</h1>
+                                <h3>John Rambo, CEO</h3>
+                            <div>
+                                
                                 <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
                             
                             </div>
-                            <div id="Brad Johnson, Head instructor">
-                                <h1>Section 2</h1>
+                            <h3>Chuck Norris, CFO</h3>
+                            <div>
+                            
                                 <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
                             
                             </div>
-                            <div id="Juozas Kripas, Assistant instructor">
-                                <h1>Section 3</h1>
+                            <h3>Morihei Ueshiba, CTO</h3>
+                            <div>
+                                
                                 <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est.
 
 Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                             
                             </div>
-    
-                            <li>Juozas Kripas, Assistant instructor</li>
-                            <li>Kevin Allen, Assistant instructor</li>
-                            <li>Ashley Einspahr, Assistant instructor</li>
-                            <li>Zachary Baud, Assistant instructor</li>
+                            <h3>Juozas Kripas, Assistant instructor</h3>
+                            <div>
+                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                            </div>
+                            <h3>Kevin Allen, Assistant instructor</h3>
+                            <div>
+                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                            </div>
+                          <h3>Ashley Einspahr, Assistant instructor</h3>
+                            <div>
+                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                            </div>
+                           <h3>Zachary Baud, Assistant instructor</h3>
+                            <div>
+                                <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                            </div>
+                            
+                           
                             </div>
                         </ul>
                     </section>
